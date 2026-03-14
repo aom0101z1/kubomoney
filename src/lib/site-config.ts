@@ -6,9 +6,10 @@ export const siteConfig = {
   url: "https://kubomoney.com",
   adsenseId: "ca-pub-1474229931660831",
   author: {
-    name: "Julian Ospina",
+    name: "Alexander O.M.",
     title: "MBA, BSc Engineering",
     bio: "Business consultant and financial educator with a Master's in Business & Entrepreneurship and a First Class BSc in Engineering from the University of Westminster, London.",
+    website: "https://alexanderom.com",
   },
   social: {
     twitter: "",

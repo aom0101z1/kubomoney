@@ -89,6 +89,38 @@ const calculators = [
     icon: "📉",
     badge: null,
   },
+  {
+    title: "ROI Calculator",
+    description:
+      "Calculate return on investment and annualized returns for any decision.",
+    href: "/calculators/roi",
+    icon: "🎯",
+    badge: "New",
+  },
+  {
+    title: "Break-Even Calculator",
+    description:
+      "Find how many units to sell to cover costs and start profiting.",
+    href: "/calculators/break-even",
+    icon: "📐",
+    badge: "New",
+  },
+  {
+    title: "Startup Cost Calculator",
+    description:
+      "Estimate total capital needed to launch your business.",
+    href: "/calculators/business-startup-cost",
+    icon: "🚀",
+    badge: "New",
+  },
+  {
+    title: "Tip Calculator",
+    description:
+      "Calculate tips and split the bill between any number of people.",
+    href: "/calculators/tip",
+    icon: "🍽️",
+    badge: "New",
+  },
 ];
 
 const guides = [

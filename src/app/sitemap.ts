@@ -17,6 +17,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "credit-card-payoff",
     "net-worth",
     "inflation",
+    "roi",
+    "break-even",
+    "business-startup-cost",
+    "tip",
   ];
 
   const staticPages = [

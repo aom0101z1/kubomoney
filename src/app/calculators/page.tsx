@@ -89,6 +89,38 @@ const calculators = [
     icon: "📉",
     category: "Planning",
   },
+  {
+    title: "ROI Calculator",
+    description:
+      "Calculate return on investment and annualized returns. Compare any investment or business decision.",
+    href: "/calculators/roi",
+    icon: "🎯",
+    category: "Investment",
+  },
+  {
+    title: "Break-Even Calculator",
+    description:
+      "Find how many units to sell to cover all costs. Essential for pricing and business planning.",
+    href: "/calculators/break-even",
+    icon: "📐",
+    category: "Business",
+  },
+  {
+    title: "Startup Cost Calculator",
+    description:
+      "Estimate one-time and monthly costs to launch your business. Calculate total capital needed.",
+    href: "/calculators/business-startup-cost",
+    icon: "🚀",
+    category: "Business",
+  },
+  {
+    title: "Tip Calculator",
+    description:
+      "Calculate tip amount, total bill, and split it between any number of people.",
+    href: "/calculators/tip",
+    icon: "🍽️",
+    category: "Everyday",
+  },
 ];
 
 export default function CalculatorsIndex() {

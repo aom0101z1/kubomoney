@@ -11,6 +11,10 @@ const calculatorLinks = [
   { href: "/calculators/credit-card-payoff", label: "Credit Card Payoff" },
   { href: "/calculators/net-worth", label: "Net Worth Calculator" },
   { href: "/calculators/inflation", label: "Inflation Calculator" },
+  { href: "/calculators/roi", label: "ROI Calculator" },
+  { href: "/calculators/break-even", label: "Break-Even Calculator" },
+  { href: "/calculators/business-startup-cost", label: "Startup Cost Calculator" },
+  { href: "/calculators/tip", label: "Tip Calculator" },
 ];
 
 const guideLinks = [
