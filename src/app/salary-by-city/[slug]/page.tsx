@@ -89,7 +89,7 @@ export default async function CitySalaryPage({ params }: { params: Promise<{ slu
 
         <AdUnit className="my-8" />
 
-        <section className="prose prose-lg max-w-none">
+        <section className="article-body">
           <h2>Salary Breakdown for {city.city}</h2>
           <p>
             The median individual income in {city.city} is <strong>{fmt(city.medianIndividual)}</strong> per year,

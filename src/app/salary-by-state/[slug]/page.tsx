@@ -87,7 +87,7 @@ export default async function StateSalaryPage({ params }: { params: Promise<{ sl
         <AdUnit className="my-8" />
 
         {/* Detailed Breakdown */}
-        <section className="prose prose-lg max-w-none">
+        <section className="article-body">
           <h2>Salary Overview for {state.name}</h2>
           <p>
             The median individual income in {state.name} is <strong>{fmt(state.medianIndividual)}</strong> per year,

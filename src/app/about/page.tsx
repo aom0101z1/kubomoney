@@ -10,7 +10,7 @@ export default function AboutPage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
       <h1 className="mb-6 text-3xl font-extrabold text-gray-900 sm:text-4xl">About {siteConfig.name}</h1>
-      <div className="prose prose-lg max-w-none">
+      <div className="article-body">
         <p>{siteConfig.name} provides free, accurate financial calculators and business tools to help you make smarter financial decisions. No signup required, no hidden fees &mdash; just useful tools.</p>
         <h2>Our Mission</h2>
         <p>We believe everyone deserves access to quality financial tools and education. Whether you&apos;re buying your first home, planning for retirement, or starting a business, our calculators give you the numbers you need to make informed decisions.</p>

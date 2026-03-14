@@ -37,7 +37,7 @@ export default function AutoLoanPage() {
         </p>
         <AutoLoanCalculator />
         <AdUnit className="my-10" />
-        <section className="prose prose-lg max-w-none">
+        <section className="article-body">
           <h2>How Auto Loans Work</h2>
           <p>An auto loan lets you finance a vehicle purchase over a set period (typically 36-84 months). You pay a fixed monthly amount that includes both principal and interest. The longer the term, the lower your monthly payment &mdash; but the more you pay in total interest.</p>
           <h2>How to Get the Best Auto Loan Rate</h2>

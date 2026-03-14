@@ -36,7 +36,7 @@ export default function HomeAffordabilityPage() {
         </p>
         <HomeAffordabilityCalculator />
         <AdUnit className="my-10" />
-        <section className="prose prose-lg max-w-none">
+        <section className="article-body">
           <h2>The 28/36 Rule</h2>
           <p>Lenders use the <strong>28/36 rule</strong> to determine how much you can borrow:</p>
           <ul>

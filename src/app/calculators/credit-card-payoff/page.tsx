@@ -37,7 +37,7 @@ export default function CreditCardPayoffPage() {
         </p>
         <CreditCardPayoffCalculator />
         <AdUnit className="my-10" />
-        <section className="prose prose-lg max-w-none">
+        <section className="article-body">
           <h2>The True Cost of Credit Card Debt</h2>
           <p>With average credit card APRs around 22-28%, a $5,000 balance with minimum payments can take over 15 years to pay off &mdash; costing you more than $6,000 in interest alone. That&apos;s more than the original balance.</p>
           <h2>Strategies to Pay Off Credit Card Debt</h2>

@@ -5,3 +5,46 @@
     scroll-behavior: smooth;
   }
 }
+
+/* Article prose styling for guide pages */
+@layer components {
+  .article-body h2 {
+    @apply mt-12 mb-4 text-2xl font-bold text-gray-900 border-b border-gray-200 pb-2;
+  }
+  .article-body h3 {
+    @apply mt-8 mb-3 text-xl font-semibold text-gray-800;
+  }
+  .article-body p {
+    @apply mb-4 leading-relaxed text-gray-700;
+  }
+  .article-body ul {
+    @apply mb-6 ml-6 list-disc space-y-2 text-gray-700;
+  }
+  .article-body ol {
+    @apply mb-6 ml-6 list-decimal space-y-2 text-gray-700;
+  }
+  .article-body li {
+    @apply leading-relaxed;
+  }
+  .article-body table {
+    @apply w-full mb-6 text-sm border-collapse overflow-hidden rounded-lg;
+  }
+  .article-body thead {
+    @apply bg-teal-50;
+  }
+  .article-body th {
+    @apply px-4 py-3 text-left font-semibold text-teal-800 border-b-2 border-teal-200;
+  }
+  .article-body td {
+    @apply px-4 py-3 border-b border-gray-100;
+  }
+  .article-body tbody tr:hover {
+    @apply bg-gray-50;
+  }
+  .article-body a {
+    @apply text-teal-600 underline decoration-teal-300 underline-offset-2 hover:text-teal-800 hover:decoration-teal-500;
+  }
+  .article-body blockquote {
+    @apply border-l-4 border-teal-400 bg-teal-50 px-6 py-4 my-6 rounded-r-lg text-gray-700 italic;
+  }
+}

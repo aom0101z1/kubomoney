@@ -69,7 +69,7 @@ export default function MortgagePage() {
         <AdUnit className="my-10" />
 
         {/* SEO Content */}
-        <section className="prose prose-lg max-w-none">
+        <section className="article-body">
           <h2>How to Use This Mortgage Calculator</h2>
           <p>
             Enter your home price, down payment, loan term, and interest rate to

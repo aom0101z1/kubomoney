@@ -19,7 +19,7 @@ export default function SalaryPage() {
       <p className="mb-8 text-lg text-gray-600">Convert between hourly, weekly, biweekly, monthly, and annual salary. See estimated federal taxes and take-home pay.</p>
       <SalaryCalculator />
       <AdUnit className="my-10" />
-      <section className="prose prose-lg max-w-none">
+      <section className="article-body">
         <h2>How to Convert Salary to Hourly Rate</h2>
         <p>To convert an annual salary to an hourly rate, divide the annual salary by the total number of work hours per year. For a standard 40-hour work week with 52 weeks: Annual Salary &divide; 2,080 = Hourly Rate.</p>
         <p>For example, a $65,000 annual salary equals $31.25 per hour.</p>

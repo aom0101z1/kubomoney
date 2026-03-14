@@ -36,7 +36,7 @@ export default function TipPage() {
         </p>
         <TipCalculator />
         <AdUnit className="my-10" />
-        <section className="prose prose-lg max-w-none">
+        <section className="article-body">
           <h2>How Much Should You Tip?</h2>
           <p>Tipping customs vary by service. Here&apos;s a general guide for the United States:</p>
           <ul>

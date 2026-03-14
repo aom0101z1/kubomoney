@@ -19,7 +19,7 @@ export default function RetirementPage() {
       <p className="mb-8 text-lg text-gray-600">Plan your retirement and find out if your savings strategy will meet your goals. Adjust your contributions, return rate, and retirement age to see different scenarios.</p>
       <RetirementCalculator />
       <AdUnit className="my-10" />
-      <section className="prose prose-lg max-w-none">
+      <section className="article-body">
         <h2>The 4% Rule Explained</h2>
         <p>The 4% rule suggests you can safely withdraw 4% of your retirement savings each year without running out of money over a 30-year retirement. To find your target nest egg, multiply your desired annual income by 25.</p>
         <p>For example, if you want $60,000/year in retirement, you need $60,000 &times; 25 = $1,500,000 saved.</p>

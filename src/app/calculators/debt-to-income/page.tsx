@@ -19,7 +19,7 @@ export default function DTIPage() {
       <p className="mb-8 text-lg text-gray-600">Calculate your DTI ratio to understand how lenders view your financial health. Most mortgage lenders require a DTI below 43%.</p>
       <DTICalculator />
       <AdUnit className="my-10" />
-      <section className="prose prose-lg max-w-none">
+      <section className="article-body">
         <h2>What Is Debt-to-Income Ratio?</h2>
         <p>Your debt-to-income (DTI) ratio compares your total monthly debt payments to your gross monthly income. Lenders use this number to evaluate your ability to manage monthly payments and repay borrowed money.</p>
         <h2>DTI Ratio Guidelines</h2>

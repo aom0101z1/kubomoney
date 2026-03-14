@@ -30,32 +30,42 @@ export default function EmergencyFundPage() {
           <span className="text-gray-900">Emergency Fund</span>
         </nav>
 
-        <h1 className="mb-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">Emergency Fund: How Much Do You Need and How to Build One</h1>
-        <p className="mb-8 text-lg text-gray-600">
+        <h1 className="mb-3 text-3xl font-extrabold text-gray-900 sm:text-4xl">Emergency Fund: How Much Do You Need and How to Build One</h1>
+        <p className="mb-8 text-lg leading-relaxed text-gray-600">
           An emergency fund is your financial safety net. Without one, a single unexpected expense can spiral into debt. Here&apos;s how to build yours.
         </p>
 
         <AdUnit className="my-8" />
 
-        <div className="prose prose-lg max-w-none">
-          <h2>What Is an Emergency Fund?</h2>
-          <p>An emergency fund is money set aside specifically for unexpected expenses &mdash; job loss, medical bills, car repairs, or home emergencies. It&apos;s not for vacations, shopping, or planned expenses.</p>
-          <p><strong>56% of Americans can&apos;t cover a $1,000 emergency</strong> without borrowing. An emergency fund prevents you from going into debt when life happens.</p>
+        <div className="article-body">
+          <section className="mb-10 rounded-xl bg-gradient-to-br from-teal-50 to-emerald-50 p-6 sm:p-8">
+            <h2 className="!mt-0 !border-0 !pb-0 text-2xl font-bold text-teal-800">What Is an Emergency Fund?</h2>
+            <p className="mt-3">
+              An emergency fund is money set aside specifically for unexpected expenses &mdash; job loss, medical bills, car repairs, or home emergencies. It&apos;s <strong>not</strong> for vacations, shopping, or planned expenses.
+            </p>
+            <p>
+              <strong>56% of Americans can&apos;t cover a $1,000 emergency</strong> without borrowing. An emergency fund prevents you from going into debt when life happens.
+            </p>
+          </section>
 
           <h2>How Much Do You Need?</h2>
-          <table>
-            <thead>
-              <tr><th>Situation</th><th>Recommended Amount</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Starter fund (while paying off debt)</td><td>$1,000 - $2,000</td></tr>
-              <tr><td>Dual income, stable jobs</td><td>3 months of expenses</td></tr>
-              <tr><td>Single income, stable job</td><td>6 months of expenses</td></tr>
-              <tr><td>Self-employed / freelancer</td><td>6-12 months of expenses</td></tr>
-              <tr><td>Single parent</td><td>6-9 months of expenses</td></tr>
-            </tbody>
-          </table>
-          <p><strong>Calculate your number:</strong> Monthly essentials (rent + food + utilities + insurance + transportation + debt minimums) x number of months. Use our <Link href="/calculators/salary" className="text-teal-600 hover:underline">Salary Calculator</Link> to know your take-home pay.</p>
+          <div className="overflow-x-auto">
+            <table>
+              <thead>
+                <tr><th>Situation</th><th>Recommended Amount</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Starter fund</strong> (while paying off debt)</td><td>$1,000 &ndash; $2,000</td></tr>
+                <tr><td><strong>Dual income</strong>, stable jobs</td><td>3 months of expenses</td></tr>
+                <tr><td><strong>Single income</strong>, stable job</td><td>6 months of expenses</td></tr>
+                <tr><td><strong>Self-employed</strong> / freelancer</td><td>6-12 months of expenses</td></tr>
+                <tr><td><strong>Single parent</strong></td><td>6-9 months of expenses</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="mt-3 rounded-lg border border-teal-200 bg-teal-50 px-5 py-4 text-sm text-teal-900">
+            <strong>Calculate your number:</strong> Monthly essentials (rent + food + utilities + insurance + transportation + debt minimums) x number of months. Use our <Link href="/calculators/salary" className="font-medium text-teal-700 underline hover:text-teal-900">Salary Calculator</Link> to know your take-home pay.
+          </div>
 
           <h2>Where to Keep Your Emergency Fund</h2>
           <p>Your emergency fund needs to be:</p>
@@ -79,38 +89,40 @@ export default function EmergencyFundPage() {
             <li><strong>Sell stuff</strong> &mdash; Unused electronics, clothes, furniture = instant cash</li>
             <li><strong>Round up purchases</strong> &mdash; Some banks auto-save the difference when you spend</li>
             <li><strong>Side hustle for 30 days</strong> &mdash; Freelancing, delivery, tutoring for one focused month</li>
-            <li><strong>Save your raises</strong> &mdash; When you get a raise, save the difference (you were living without it)</li>
+            <li><strong>Save your raises</strong> &mdash; When you get a raise, save the difference</li>
           </ol>
 
           <h3>Timeline to Build Your Fund</h3>
-          <table>
-            <thead>
-              <tr><th>Monthly Saving</th><th>$1,000</th><th>$5,000</th><th>$10,000</th><th>$15,000</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>$100/month</td><td>10 months</td><td>4.2 years</td><td>8.3 years</td><td>12.5 years</td></tr>
-              <tr><td>$250/month</td><td>4 months</td><td>1.7 years</td><td>3.3 years</td><td>5 years</td></tr>
-              <tr><td>$500/month</td><td>2 months</td><td>10 months</td><td>1.7 years</td><td>2.5 years</td></tr>
-              <tr><td>$1,000/month</td><td>1 month</td><td>5 months</td><td>10 months</td><td>15 months</td></tr>
-            </tbody>
-          </table>
+          <div className="overflow-x-auto">
+            <table>
+              <thead>
+                <tr><th>Monthly Saving</th><th>$1,000</th><th>$5,000</th><th>$10,000</th><th>$15,000</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>$100/month</strong></td><td>10 months</td><td>4.2 years</td><td>8.3 years</td><td>12.5 years</td></tr>
+                <tr><td><strong>$250/month</strong></td><td>4 months</td><td>1.7 years</td><td>3.3 years</td><td>5 years</td></tr>
+                <tr><td><strong>$500/month</strong></td><td>2 months</td><td>10 months</td><td>1.7 years</td><td>2.5 years</td></tr>
+                <tr><td><strong>$1,000/month</strong></td><td>1 month</td><td>5 months</td><td>10 months</td><td>15 months</td></tr>
+              </tbody>
+            </table>
+          </div>
 
           <h2>When to Use Your Emergency Fund</h2>
           <p>Before dipping in, ask yourself three questions:</p>
           <ol>
-            <li>Is it unexpected? (A birthday gift is not an emergency)</li>
-            <li>Is it necessary? (A sale on electronics is not an emergency)</li>
-            <li>Is it urgent? (Can it wait until next paycheck?)</li>
+            <li><strong>Is it unexpected?</strong> (A birthday gift is not an emergency)</li>
+            <li><strong>Is it necessary?</strong> (A sale on electronics is not an emergency)</li>
+            <li><strong>Is it urgent?</strong> (Can it wait until next paycheck?)</li>
           </ol>
-          <p>If all three answers are yes, use the fund. Then immediately start rebuilding it.</p>
+          <p>If all three answers are yes, use the fund. Then <strong>immediately start rebuilding it</strong>.</p>
 
           <h2>Emergency Fund vs Paying Off Debt</h2>
           <p>This is a common debate. The best approach for most people:</p>
           <ol>
             <li>Save a starter emergency fund ($1,000-$2,000)</li>
-            <li>Pay off high-interest debt aggressively &mdash; see our <Link href="/personal-finance/how-to-pay-off-debt" className="text-teal-600 hover:underline">debt payoff guide</Link></li>
+            <li>Pay off high-interest debt aggressively &mdash; see our <Link href="/personal-finance/how-to-pay-off-debt">debt payoff guide</Link></li>
             <li>Build the full emergency fund (3-6 months)</li>
-            <li>Then focus on investing &mdash; see our <Link href="/personal-finance/investing-basics" className="text-teal-600 hover:underline">investing guide</Link></li>
+            <li>Then focus on investing &mdash; see our <Link href="/personal-finance/investing-basics">investing guide</Link></li>
           </ol>
         </div>
 

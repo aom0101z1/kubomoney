@@ -7,7 +7,7 @@ export default function PrivacyPage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
       <h1 className="mb-6 text-3xl font-extrabold text-gray-900">Privacy Policy</h1>
-      <div className="prose prose-lg max-w-none">
+      <div className="article-body">
         <p><em>Last updated: March 2026</em></p>
         <h2>Information We Collect</h2>
         <p>{siteConfig.name} does not require user registration. We do not collect personal information through our calculators. All calculations are performed in your browser and no financial data is stored on our servers.</p>

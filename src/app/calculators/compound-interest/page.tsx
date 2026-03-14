@@ -37,7 +37,7 @@ export default function CompoundInterestPage() {
         </p>
         <CompoundInterestCalculator />
         <AdUnit className="my-10" />
-        <section className="prose prose-lg max-w-none">
+        <section className="article-body">
           <h2>What Is Compound Interest?</h2>
           <p>Compound interest is interest calculated on both the initial principal and the accumulated interest from previous periods. It&apos;s often called &quot;interest on interest&quot; and is the reason investments can grow exponentially over time.</p>
           <h2>The Compound Interest Formula</h2>

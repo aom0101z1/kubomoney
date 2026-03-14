@@ -37,7 +37,7 @@ export default function SavingsGoalPage() {
         </p>
         <SavingsGoalCalculator />
         <AdUnit className="my-10" />
-        <section className="prose prose-lg max-w-none">
+        <section className="article-body">
           <h2>How to Reach Your Savings Goal Faster</h2>
           <p>There are three levers you can pull to reach any savings goal faster:</p>
           <ul>

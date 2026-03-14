@@ -19,7 +19,7 @@ export default function LoanPayoffPage() {
       <p className="mb-8 text-lg text-gray-600">Find out when you&apos;ll pay off your loan and see how extra monthly payments can save you thousands in interest.</p>
       <LoanPayoffCalculator />
       <AdUnit className="my-10" />
-      <section className="prose prose-lg max-w-none">
+      <section className="article-body">
         <h2>How Extra Payments Work</h2>
         <p>When you make extra payments on a loan, the entire extra amount goes directly toward reducing your principal balance. This means you pay less interest over the life of the loan because interest is calculated on a smaller balance each month.</p>
         <h2>Strategies to Pay Off Debt Faster</h2>

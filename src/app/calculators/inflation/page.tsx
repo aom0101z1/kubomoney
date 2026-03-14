@@ -37,7 +37,7 @@ export default function InflationPage() {
         </p>
         <InflationCalculator />
         <AdUnit className="my-10" />
-        <section className="prose prose-lg max-w-none">
+        <section className="article-body">
           <h2>What Is Inflation?</h2>
           <p>Inflation is the rate at which the general price level of goods and services rises over time. When inflation goes up, each dollar you have buys less. The US Federal Reserve targets about 2% annual inflation, but actual rates vary year to year.</p>
           <h2>Historical US Inflation Rates</h2>

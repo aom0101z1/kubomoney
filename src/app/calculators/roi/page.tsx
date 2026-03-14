@@ -37,7 +37,7 @@ export default function ROIPage() {
         </p>
         <ROICalculator />
         <AdUnit className="my-10" />
-        <section className="prose prose-lg max-w-none">
+        <section className="article-body">
           <h2>What Is ROI?</h2>
           <p>Return on Investment (ROI) measures how much profit or loss an investment generates relative to its cost. It&apos;s one of the most widely used metrics in finance and business for evaluating the efficiency of an investment.</p>
           <h2>How ROI Is Calculated</h2>

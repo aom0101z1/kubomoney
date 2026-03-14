@@ -37,7 +37,7 @@ export default function BusinessStartupCostPage() {
         </p>
         <BusinessStartupCostCalculator />
         <AdUnit className="my-10" />
-        <section className="prose prose-lg max-w-none">
+        <section className="article-body">
           <h2>Why Calculate Startup Costs?</h2>
           <p>The #1 reason small businesses fail is running out of cash. By calculating your startup costs upfront, you can secure enough funding, set realistic expectations, and avoid financial surprises in the critical first year.</p>
           <h2>Common Startup Cost Categories</h2>

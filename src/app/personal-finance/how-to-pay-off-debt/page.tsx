@@ -30,47 +30,56 @@ export default function HowToPayOffDebtPage() {
           <span className="text-gray-900">How to Pay Off Debt</span>
         </nav>
 
-        <h1 className="mb-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">How to Pay Off Debt Fast</h1>
-        <p className="mb-8 text-lg text-gray-600">
+        <h1 className="mb-3 text-3xl font-extrabold text-gray-900 sm:text-4xl">How to Pay Off Debt Fast</h1>
+        <p className="mb-8 text-lg leading-relaxed text-gray-600">
           The average American has $104,215 in debt. Here are proven strategies to pay it off faster and save thousands in interest.
         </p>
 
         <AdUnit className="my-8" />
 
-        <div className="prose prose-lg max-w-none">
+        <div className="article-body">
           <h2>Step 1: Know What You Owe</h2>
-          <p>List every debt with the balance, interest rate, minimum payment, and due date. This clarity alone reduces financial anxiety. Use our <Link href="/calculators/net-worth" className="text-teal-600 hover:underline">Net Worth Calculator</Link> to see the full picture.</p>
+          <p>List every debt with the balance, interest rate, minimum payment, and due date. This clarity alone reduces financial anxiety. Use our <Link href="/calculators/net-worth">Net Worth Calculator</Link> to see the full picture.</p>
 
           <h2>Step 2: Choose a Payoff Strategy</h2>
 
-          <h3>Debt Avalanche (Saves the Most Money)</h3>
-          <p>Pay minimums on everything, then put all extra money toward the <strong>highest interest rate</strong> debt first.</p>
-          <ul>
-            <li><strong>Pro:</strong> Mathematically optimal &mdash; saves the most interest</li>
-            <li><strong>Con:</strong> If your highest-rate debt is large, progress feels slow</li>
-            <li><strong>Best for:</strong> Disciplined, numbers-driven people</li>
-          </ul>
-
-          <h3>Debt Snowball (Best for Motivation)</h3>
-          <p>Pay minimums on everything, then put all extra money toward the <strong>smallest balance</strong> first.</p>
-          <ul>
-            <li><strong>Pro:</strong> Quick wins build momentum and motivation</li>
-            <li><strong>Con:</strong> May pay more total interest</li>
-            <li><strong>Best for:</strong> People who need motivation to keep going</li>
-          </ul>
+          <div className="my-6 grid gap-4 sm:grid-cols-2">
+            <div className="rounded-xl border-2 border-teal-200 bg-teal-50 p-6">
+              <h3 className="!mt-0 mb-2 text-lg font-bold text-teal-800">Debt Avalanche</h3>
+              <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-teal-600">Saves the Most Money</p>
+              <p className="mb-3 text-sm text-gray-700">Pay minimums on everything, then put all extra money toward the <strong>highest interest rate</strong> debt first.</p>
+              <ul className="ml-5 list-disc space-y-1 text-sm text-gray-700">
+                <li><strong>Pro:</strong> Mathematically optimal</li>
+                <li><strong>Con:</strong> Progress may feel slow</li>
+                <li><strong>Best for:</strong> Disciplined, numbers-driven people</li>
+              </ul>
+            </div>
+            <div className="rounded-xl border-2 border-emerald-200 bg-emerald-50 p-6">
+              <h3 className="!mt-0 mb-2 text-lg font-bold text-emerald-800">Debt Snowball</h3>
+              <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-emerald-600">Best for Motivation</p>
+              <p className="mb-3 text-sm text-gray-700">Pay minimums on everything, then put all extra money toward the <strong>smallest balance</strong> first.</p>
+              <ul className="ml-5 list-disc space-y-1 text-sm text-gray-700">
+                <li><strong>Pro:</strong> Quick wins build momentum</li>
+                <li><strong>Con:</strong> May pay more total interest</li>
+                <li><strong>Best for:</strong> People who need motivation</li>
+              </ul>
+            </div>
+          </div>
 
           <h3>Example: $15,000 Total Debt</h3>
-          <table>
-            <thead>
-              <tr><th>Debt</th><th>Balance</th><th>Rate</th><th>Avalanche Order</th><th>Snowball Order</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Credit Card A</td><td>$3,000</td><td>22%</td><td>1st</td><td>2nd</td></tr>
-              <tr><td>Credit Card B</td><td>$1,500</td><td>18%</td><td>2nd</td><td>1st</td></tr>
-              <tr><td>Car Loan</td><td>$8,000</td><td>6%</td><td>3rd</td><td>3rd</td></tr>
-              <tr><td>Student Loan</td><td>$2,500</td><td>5%</td><td>4th</td><td>2nd</td></tr>
-            </tbody>
-          </table>
+          <div className="overflow-x-auto">
+            <table>
+              <thead>
+                <tr><th>Debt</th><th>Balance</th><th>Rate</th><th>Avalanche</th><th>Snowball</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Credit Card A</strong></td><td>$3,000</td><td>22%</td><td>1st</td><td>2nd</td></tr>
+                <tr><td><strong>Credit Card B</strong></td><td>$1,500</td><td>18%</td><td>2nd</td><td>1st</td></tr>
+                <tr><td><strong>Car Loan</strong></td><td>$8,000</td><td>6%</td><td>3rd</td><td>3rd</td></tr>
+                <tr><td><strong>Student Loan</strong></td><td>$2,500</td><td>5%</td><td>4th</td><td>2nd</td></tr>
+              </tbody>
+            </table>
+          </div>
 
           <h2>Step 3: Free Up Extra Money</h2>
           <ul>
@@ -90,27 +99,36 @@ export default function HowToPayOffDebtPage() {
           </ul>
 
           <h2>Step 5: Automate and Stay Consistent</h2>
-          <p>Set up automatic payments for at least the minimum on every debt. Then set up a separate automatic payment for your &quot;extra&quot; amount on your target debt. Automation removes willpower from the equation.</p>
+          <p>Set up automatic payments for at least the minimum on every debt. Then set up a separate automatic payment for your &quot;extra&quot; amount on your target debt. <strong>Automation removes willpower from the equation.</strong></p>
 
           <h2>Debt Payoff Timeline Examples</h2>
           <p>With $500/month extra toward debt:</p>
-          <table>
-            <thead>
-              <tr><th>Total Debt</th><th>Avg Rate</th><th>Min Only</th><th>+$500/mo</th><th>Interest Saved</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>$5,000</td><td>20%</td><td>9 years</td><td>9 months</td><td>$3,800</td></tr>
-              <tr><td>$15,000</td><td>18%</td><td>25 years</td><td>2.5 years</td><td>$18,000</td></tr>
-              <tr><td>$30,000</td><td>15%</td><td>30+ years</td><td>4.5 years</td><td>$28,000</td></tr>
-            </tbody>
-          </table>
+          <div className="overflow-x-auto">
+            <table>
+              <thead>
+                <tr><th>Total Debt</th><th>Avg Rate</th><th>Min Only</th><th>+$500/mo</th><th>Interest Saved</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>$5,000</strong></td><td>20%</td><td>9 years</td><td>9 months</td><td>$3,800</td></tr>
+                <tr><td><strong>$15,000</strong></td><td>18%</td><td>25 years</td><td>2.5 years</td><td>$18,000</td></tr>
+                <tr><td><strong>$30,000</strong></td><td>15%</td><td>30+ years</td><td>4.5 years</td><td>$28,000</td></tr>
+              </tbody>
+            </table>
+          </div>
 
           <h2>Tools to Help</h2>
-          <ul>
-            <li><Link href="/calculators/credit-card-payoff" className="text-teal-600 hover:underline">Credit Card Payoff Calculator</Link> &mdash; See your exact payoff date</li>
-            <li><Link href="/calculators/loan-payoff" className="text-teal-600 hover:underline">Loan Payoff Calculator</Link> &mdash; Calculate how extra payments reduce your timeline</li>
-            <li><Link href="/calculators/debt-to-income" className="text-teal-600 hover:underline">Debt-to-Income Calculator</Link> &mdash; Track your DTI ratio as you pay down debt</li>
-          </ul>
+          <div className="my-4 grid gap-3 sm:grid-cols-3">
+            {[
+              { href: "/calculators/credit-card-payoff", label: "Credit Card Payoff", desc: "See your exact payoff date" },
+              { href: "/calculators/loan-payoff", label: "Loan Payoff", desc: "Extra payments save how much?" },
+              { href: "/calculators/debt-to-income", label: "DTI Calculator", desc: "Track DTI as you pay down" },
+            ].map((tool) => (
+              <Link key={tool.href} href={tool.href} className="block rounded-lg border border-gray-200 bg-gray-50 p-4 no-underline transition hover:border-teal-300 hover:shadow-sm">
+                <p className="font-semibold text-teal-700">{tool.label}</p>
+                <p className="text-sm text-gray-600">{tool.desc}</p>
+              </Link>
+            ))}
+          </div>
 
           <h2>When to Seek Help</h2>
           <p>If you can&apos;t make minimum payments, your debt-to-income ratio is above 50%, or you&apos;re being harassed by collectors, consider:</p>

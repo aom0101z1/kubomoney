@@ -37,7 +37,7 @@ export default function PaycheckPage() {
         </p>
         <PaycheckCalculator />
         <AdUnit className="my-10" />
-        <section className="prose prose-lg max-w-none">
+        <section className="article-body">
           <h2>Understanding Your Paycheck</h2>
           <p>Your paycheck has several deductions before you receive your take-home pay:</p>
           <ul>

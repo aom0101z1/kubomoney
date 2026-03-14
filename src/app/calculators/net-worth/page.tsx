@@ -37,7 +37,7 @@ export default function NetWorthPage() {
         </p>
         <NetWorthCalculator />
         <AdUnit className="my-10" />
-        <section className="prose prose-lg max-w-none">
+        <section className="article-body">
           <h2>What Is Net Worth?</h2>
           <p>Net worth is simply: <strong>Assets - Liabilities = Net Worth</strong>. It&apos;s the most important number in personal finance because it captures your complete financial picture in one figure. A growing net worth means you&apos;re building wealth.</p>
           <h2>Average Net Worth by Age</h2>

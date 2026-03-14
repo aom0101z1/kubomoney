@@ -37,7 +37,7 @@ export default function BreakEvenPage() {
         </p>
         <BreakEvenCalculator />
         <AdUnit className="my-10" />
-        <section className="prose prose-lg max-w-none">
+        <section className="article-body">
           <h2>What Is a Break-Even Analysis?</h2>
           <p>A break-even analysis tells you exactly how many units you need to sell (or how much revenue you need to generate) to cover all your costs. Below that point, you&apos;re losing money. Above it, every additional sale is profit.</p>
           <h2>The Break-Even Formula</h2>

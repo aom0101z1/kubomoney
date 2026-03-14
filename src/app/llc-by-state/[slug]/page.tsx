@@ -80,7 +80,7 @@ export default async function StateLLCPage({ params }: { params: Promise<{ slug:
 
         <AdUnit className="my-8" />
 
-        <section className="prose prose-lg max-w-none">
+        <section className="article-body">
           <h2>Steps to Form an LLC in {state.name}</h2>
 
           <h3>Step 1: Choose Your LLC Name</h3>
