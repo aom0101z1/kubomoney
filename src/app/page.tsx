@@ -93,16 +93,16 @@ const calculators = [
 
 const guides = [
   {
-    title: "How to Start an LLC",
-    description: "Step-by-step guide to forming an LLC in any US state.",
-    href: "/business-guides/how-to-start-llc",
-    icon: "🏢",
+    title: "Salary by State",
+    description: "Compare average salaries, cost of living, and tax rates across all 50 states.",
+    href: "/salary-by-state",
+    icon: "💰",
   },
   {
-    title: "Budgeting 101",
-    description: "Master your finances with proven budgeting strategies.",
-    href: "/personal-finance/budgeting-guide",
-    icon: "📋",
+    title: "Start an LLC",
+    description: "Step-by-step LLC formation guides for all 50 states with costs and requirements.",
+    href: "/llc-by-state",
+    icon: "🏢",
   },
   {
     title: "Investing for Beginners",
