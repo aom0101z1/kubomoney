@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ROICalculator from "./ROICalculator";
 import AdUnit from "@/components/AdUnit";
 import { siteConfig } from "@/lib/site-config";
@@ -56,6 +57,20 @@ export default function ROIPage() {
             <li><strong>Shorten the timeline</strong> &ndash; Faster returns improve annualized ROI</li>
             <li><strong>Reinvest profits</strong> &ndash; Compound gains by reinvesting returns</li>
           </ul>
+          <h2>Related Tools</h2>
+          <div className="my-4 grid gap-3 sm:grid-cols-2">
+            {[
+              { href: "/calculators/business-startup-cost", label: "Business Startup Cost Calculator", desc: "Estimate the total cost to launch your business" },
+              { href: "/calculators/break-even", label: "Break-Even Calculator", desc: "Find out when your business or investment becomes profitable" },
+              { href: "/calculators/compound-interest", label: "Compound Interest Calculator", desc: "See how reinvesting returns compounds your gains" },
+              { href: "/personal-finance/investing-basics", label: "Investing Basics Guide", desc: "Learn the fundamentals of investing and building wealth" },
+            ].map((tool) => (
+              <Link key={tool.href} href={tool.href} className="block rounded-lg border border-gray-200 bg-gray-50 p-4 no-underline transition hover:border-teal-300 hover:shadow-sm">
+                <p className="font-semibold text-teal-700">{tool.label}</p>
+                <p className="text-sm text-gray-600">{tool.desc}</p>
+              </Link>
+            ))}
+          </div>
         </section>
         <AdUnit className="my-10" />
       </article>

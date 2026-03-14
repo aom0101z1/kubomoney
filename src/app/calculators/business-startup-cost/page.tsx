@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import BusinessStartupCostCalculator from "./BusinessStartupCostCalculator";
 import AdUnit from "@/components/AdUnit";
 import { siteConfig } from "@/lib/site-config";
@@ -58,6 +59,20 @@ export default function BusinessStartupCostPage() {
             <li><strong>Pre-sell</strong> &ndash; Validate demand before investing in inventory</li>
             <li><strong>Freelance first</strong> &ndash; Offer services before building products</li>
           </ul>
+          <h2>Related Tools</h2>
+          <div className="my-4 grid gap-3 sm:grid-cols-2">
+            {[
+              { href: "/calculators/break-even", label: "Break-Even Calculator", desc: "Find out how many units you need to sell to cover your costs." },
+              { href: "/calculators/roi", label: "ROI Calculator", desc: "Calculate the return on investment for any business decision." },
+              { href: "/business-guides/startup-costs", label: "Startup Costs Guide", desc: "Complete guide to budgeting and planning your startup expenses." },
+              { href: "/business-guides/how-to-start-llc", label: "How to Start an LLC", desc: "Learn how to form an LLC in any state with our complete guide." },
+            ].map((tool) => (
+              <Link key={tool.href} href={tool.href} className="block rounded-lg border border-gray-200 bg-gray-50 p-4 no-underline transition hover:border-teal-300 hover:shadow-sm">
+                <p className="font-semibold text-teal-700">{tool.label}</p>
+                <p className="text-sm text-gray-600">{tool.desc}</p>
+              </Link>
+            ))}
+          </div>
         </section>
         <AdUnit className="my-10" />
       </article>

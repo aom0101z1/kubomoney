@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import RetirementCalculator from "./RetirementCalculator";
 import AdUnit from "@/components/AdUnit";
 
@@ -33,6 +34,20 @@ export default function RetirementPage() {
         </ul>
         <h2>Don&apos;t Forget About Inflation</h2>
         <p>At 3% inflation, $60,000 today will only have the purchasing power of about $24,000 in 30 years. This calculator accounts for inflation so you can see the real income you&apos;ll need.</p>
+        <h2>Related Tools</h2>
+        <div className="my-4 grid gap-3 sm:grid-cols-2">
+          {[
+            { href: "/calculators/compound-interest", label: "Compound Interest Calculator", desc: "See how your savings and investments grow over time" },
+            { href: "/calculators/savings-goal", label: "Savings Goal Calculator", desc: "Find out how long it takes to reach your savings target" },
+            { href: "/calculators/paycheck", label: "Paycheck Calculator", desc: "Calculate your take-home pay after taxes and deductions" },
+            { href: "/personal-finance/retirement-planning", label: "Retirement Planning Guide", desc: "Step-by-step guide to planning a comfortable retirement" },
+          ].map((tool) => (
+            <Link key={tool.href} href={tool.href} className="block rounded-lg border border-gray-200 bg-gray-50 p-4 no-underline transition hover:border-teal-300 hover:shadow-sm">
+              <p className="font-semibold text-teal-700">{tool.label}</p>
+              <p className="text-sm text-gray-600">{tool.desc}</p>
+            </Link>
+          ))}
+        </div>
       </section>
       <AdUnit className="my-10" />
     </article>

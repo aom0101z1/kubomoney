@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import AutoLoanCalculator from "./AutoLoanCalculator";
 import AdUnit from "@/components/AdUnit";
 import { siteConfig } from "@/lib/site-config";
@@ -50,6 +51,20 @@ export default function AutoLoanPage() {
           </ul>
           <h2>New vs Used Car Loan Rates</h2>
           <p>New cars typically have lower interest rates (5-7%) compared to used cars (7-10%). However, new cars depreciate faster &mdash; losing 20-30% of their value in the first year. A 2-3 year old certified pre-owned vehicle often offers the best value.</p>
+          <h2>Related Tools</h2>
+          <div className="my-4 grid gap-3 sm:grid-cols-2">
+            {[
+              { href: "/calculators/loan-payoff", label: "Loan Payoff Calculator", desc: "See how extra payments shorten any loan and save on interest." },
+              { href: "/calculators/salary", label: "Salary Calculator", desc: "Convert your salary between hourly, weekly, monthly, and annual amounts." },
+              { href: "/calculators/debt-to-income", label: "Debt-to-Income Calculator", desc: "Check if your debt load is healthy before taking on a car loan." },
+              { href: "/personal-finance/budgeting-guide", label: "Budgeting Guide", desc: "Learn how to budget for a car payment without overstretching your finances." },
+            ].map((tool) => (
+              <Link key={tool.href} href={tool.href} className="block rounded-lg border border-gray-200 bg-gray-50 p-4 no-underline transition hover:border-teal-300 hover:shadow-sm">
+                <p className="font-semibold text-teal-700">{tool.label}</p>
+                <p className="text-sm text-gray-600">{tool.desc}</p>
+              </Link>
+            ))}
+          </div>
         </section>
         <AdUnit className="my-10" />
       </article>

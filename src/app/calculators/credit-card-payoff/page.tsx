@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import CreditCardPayoffCalculator from "./CreditCardPayoffCalculator";
 import AdUnit from "@/components/AdUnit";
 import { siteConfig } from "@/lib/site-config";
@@ -50,6 +51,20 @@ export default function CreditCardPayoffPage() {
           </ul>
           <h2>How Credit Card Interest Works</h2>
           <p>Credit card interest compounds daily on your average daily balance. Your APR is divided by 365 to get the daily rate, which is then applied to your balance each day. This is why credit card debt grows so quickly compared to other types of loans.</p>
+          <h2>Related Tools</h2>
+          <div className="my-4 grid gap-3 sm:grid-cols-2">
+            {[
+              { href: "/calculators/loan-payoff", label: "Loan Payoff Calculator", desc: "See how extra payments shorten any loan and save on interest." },
+              { href: "/calculators/debt-to-income", label: "Debt-to-Income Calculator", desc: "Check if your debt load is healthy before applying for new credit." },
+              { href: "/calculators/net-worth", label: "Net Worth Calculator", desc: "Track your total assets minus liabilities to measure financial progress." },
+              { href: "/personal-finance/how-to-pay-off-debt", label: "How to Pay Off Debt", desc: "Step-by-step guide to becoming debt-free using proven strategies." },
+            ].map((tool) => (
+              <Link key={tool.href} href={tool.href} className="block rounded-lg border border-gray-200 bg-gray-50 p-4 no-underline transition hover:border-teal-300 hover:shadow-sm">
+                <p className="font-semibold text-teal-700">{tool.label}</p>
+                <p className="text-sm text-gray-600">{tool.desc}</p>
+              </Link>
+            ))}
+          </div>
         </section>
         <AdUnit className="my-10" />
       </article>

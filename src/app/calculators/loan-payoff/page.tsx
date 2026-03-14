@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import LoanPayoffCalculator from "./LoanPayoffCalculator";
 import AdUnit from "@/components/AdUnit";
 
@@ -30,6 +31,20 @@ export default function LoanPayoffPage() {
           <li><strong>Avalanche method</strong> &ndash; Pay off highest interest rate first to save the most money</li>
           <li><strong>Windfalls</strong> &ndash; Apply tax refunds, bonuses, and gifts to your loan balance</li>
         </ul>
+        <h2>Related Tools</h2>
+        <div className="my-4 grid gap-3 sm:grid-cols-2">
+          {[
+            { href: "/calculators/credit-card-payoff", label: "Credit Card Payoff Calculator", desc: "Find how long it takes to pay off credit card debt and total interest cost." },
+            { href: "/calculators/auto-loan", label: "Auto Loan Calculator", desc: "Estimate your monthly car payment with trade-in and down payment." },
+            { href: "/calculators/mortgage", label: "Mortgage Calculator", desc: "Calculate monthly mortgage payments including taxes and insurance." },
+            { href: "/personal-finance/how-to-pay-off-debt", label: "How to Pay Off Debt", desc: "Step-by-step guide to becoming debt-free using proven strategies." },
+          ].map((tool) => (
+            <Link key={tool.href} href={tool.href} className="block rounded-lg border border-gray-200 bg-gray-50 p-4 no-underline transition hover:border-teal-300 hover:shadow-sm">
+              <p className="font-semibold text-teal-700">{tool.label}</p>
+              <p className="text-sm text-gray-600">{tool.desc}</p>
+            </Link>
+          ))}
+        </div>
       </section>
       <AdUnit className="my-10" />
     </article>

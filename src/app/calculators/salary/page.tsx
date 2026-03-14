@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import SalaryCalculator from "./SalaryCalculator";
 import AdUnit from "@/components/AdUnit";
 
@@ -31,6 +32,20 @@ export default function SalaryPage() {
           <li>$30/hour = $62,400/year</li>
           <li>$50/hour = $104,000/year</li>
         </ul>
+        <h2>Related Tools</h2>
+        <div className="my-4 grid gap-3 sm:grid-cols-2">
+          {[
+            { href: "/calculators/paycheck", label: "Paycheck Calculator", desc: "Estimate your take-home pay after federal and state taxes." },
+            { href: "/calculators/inflation", label: "Inflation Calculator", desc: "See how inflation affects your salary's purchasing power over time." },
+            { href: "/calculators/net-worth", label: "Net Worth Calculator", desc: "Track your total financial health by comparing assets and liabilities." },
+            { href: "/salary-by-state", label: "Salary by State", desc: "Compare average salaries and cost of living across all 50 states." },
+          ].map((tool) => (
+            <Link key={tool.href} href={tool.href} className="block rounded-lg border border-gray-200 bg-gray-50 p-4 no-underline transition hover:border-teal-300 hover:shadow-sm">
+              <p className="font-semibold text-teal-700">{tool.label}</p>
+              <p className="text-sm text-gray-600">{tool.desc}</p>
+            </Link>
+          ))}
+        </div>
       </section>
       <AdUnit className="my-10" />
     </article>

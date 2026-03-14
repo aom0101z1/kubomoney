@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import DTICalculator from "./DTICalculator";
 import AdUnit from "@/components/AdUnit";
 
@@ -31,6 +32,20 @@ export default function DTIPage() {
         </ul>
         <h2>Front-End vs Back-End DTI</h2>
         <p><strong>Front-end DTI</strong> only includes housing costs (mortgage/rent, property tax, insurance). Most lenders want this below 28%. <strong>Back-end DTI</strong> includes all monthly debt obligations and should be below 36-43%.</p>
+        <h2>Related Tools</h2>
+        <div className="my-4 grid gap-3 sm:grid-cols-2">
+          {[
+            { href: "/calculators/mortgage", label: "Mortgage Calculator", desc: "Calculate monthly mortgage payments including taxes and insurance." },
+            { href: "/calculators/home-affordability", label: "Home Affordability Calculator", desc: "Find out how much house you can afford based on your income and debts." },
+            { href: "/calculators/loan-payoff", label: "Loan Payoff Calculator", desc: "See how extra payments shorten any loan and save on interest." },
+            { href: "/personal-finance/budgeting-guide", label: "Budgeting Guide", desc: "Learn how to create a budget that keeps your DTI ratio in check." },
+          ].map((tool) => (
+            <Link key={tool.href} href={tool.href} className="block rounded-lg border border-gray-200 bg-gray-50 p-4 no-underline transition hover:border-teal-300 hover:shadow-sm">
+              <p className="font-semibold text-teal-700">{tool.label}</p>
+              <p className="text-sm text-gray-600">{tool.desc}</p>
+            </Link>
+          ))}
+        </div>
       </section>
       <AdUnit className="my-10" />
     </article>

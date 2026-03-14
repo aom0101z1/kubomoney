@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import TipCalculator from "./TipCalculator";
 import AdUnit from "@/components/AdUnit";
 import { siteConfig } from "@/lib/site-config";
@@ -52,6 +53,18 @@ export default function TipPage() {
           <p>Technically, you should tip on the <strong>pre-tax</strong> amount since the tax goes to the government, not the server. However, many people tip on the total for simplicity. The difference is usually small &mdash; on a $100 bill with 8% tax, tipping 20% pre-tax is $20 vs $21.60 post-tax.</p>
           <h2>Splitting the Bill Fairly</h2>
           <p>The simplest approach is to split evenly, but if orders vary significantly, consider asking the server for separate checks or using a bill-splitting app. Always add the tip before dividing to make sure your server isn&apos;t shortchanged.</p>
+          <h2>Related Tools</h2>
+          <div className="my-4 grid gap-3 sm:grid-cols-2">
+            {[
+              { href: "/calculators/salary", label: "Salary Calculator", desc: "Convert between hourly, monthly, and annual salary instantly." },
+              { href: "/personal-finance/budgeting-guide", label: "Budgeting Guide", desc: "Learn proven budgeting methods to manage your money effectively." },
+            ].map((tool) => (
+              <Link key={tool.href} href={tool.href} className="block rounded-lg border border-gray-200 bg-gray-50 p-4 no-underline transition hover:border-teal-300 hover:shadow-sm">
+                <p className="font-semibold text-teal-700">{tool.label}</p>
+                <p className="text-sm text-gray-600">{tool.desc}</p>
+              </Link>
+            ))}
+          </div>
         </section>
         <AdUnit className="my-10" />
       </article>

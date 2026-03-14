@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import CompoundInterestCalculator from "./CompoundInterestCalculator";
 import AdUnit from "@/components/AdUnit";
 import { siteConfig } from "@/lib/site-config";
@@ -53,6 +54,20 @@ export default function CompoundInterestPage() {
             <li><strong>Minimize fees</strong> &ndash; High fees erode compound growth significantly over decades</li>
             <li><strong>Choose higher compounding frequency</strong> &ndash; Monthly compounding beats annual</li>
           </ul>
+          <h2>Related Tools</h2>
+          <div className="my-4 grid gap-3 sm:grid-cols-2">
+            {[
+              { href: "/calculators/savings-goal", label: "Savings Goal Calculator", desc: "Find out how long it takes to reach your savings target" },
+              { href: "/calculators/retirement", label: "Retirement Calculator", desc: "See if you're on track to retire comfortably" },
+              { href: "/calculators/roi", label: "ROI Calculator", desc: "Calculate return on investment for any asset or decision" },
+              { href: "/personal-finance/investing-basics", label: "Investing Basics Guide", desc: "Learn the fundamentals of investing and building wealth" },
+            ].map((tool) => (
+              <Link key={tool.href} href={tool.href} className="block rounded-lg border border-gray-200 bg-gray-50 p-4 no-underline transition hover:border-teal-300 hover:shadow-sm">
+                <p className="font-semibold text-teal-700">{tool.label}</p>
+                <p className="text-sm text-gray-600">{tool.desc}</p>
+              </Link>
+            ))}
+          </div>
         </section>
         <AdUnit className="my-10" />
       </article>

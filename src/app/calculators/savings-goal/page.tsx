@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import SavingsGoalCalculator from "./SavingsGoalCalculator";
 import AdUnit from "@/components/AdUnit";
 import { siteConfig } from "@/lib/site-config";
@@ -60,6 +61,20 @@ export default function SavingsGoalPage() {
             <li><strong>CDs (Certificates of Deposit)</strong> &mdash; Slightly higher rates but money is locked for a term</li>
             <li><strong>Index funds</strong> &mdash; Higher returns (~7-10%) but volatile. Best for goals 5+ years away.</li>
           </ul>
+          <h2>Related Tools</h2>
+          <div className="my-4 grid gap-3 sm:grid-cols-2">
+            {[
+              { href: "/calculators/compound-interest", label: "Compound Interest Calculator", desc: "See how your savings and investments grow over time" },
+              { href: "/calculators/retirement", label: "Retirement Calculator", desc: "Check if your savings strategy will meet retirement goals" },
+              { href: "/calculators/home-affordability", label: "Home Affordability Calculator", desc: "Find out how much house you can afford" },
+              { href: "/personal-finance/emergency-fund", label: "Emergency Fund Guide", desc: "Learn how to build and maintain an emergency fund" },
+            ].map((tool) => (
+              <Link key={tool.href} href={tool.href} className="block rounded-lg border border-gray-200 bg-gray-50 p-4 no-underline transition hover:border-teal-300 hover:shadow-sm">
+                <p className="font-semibold text-teal-700">{tool.label}</p>
+                <p className="text-sm text-gray-600">{tool.desc}</p>
+              </Link>
+            ))}
+          </div>
         </section>
         <AdUnit className="my-10" />
       </article>

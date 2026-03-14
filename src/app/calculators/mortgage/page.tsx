@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import MortgageCalculator from "./MortgageCalculator";
 import AdUnit from "@/components/AdUnit";
 import { siteConfig } from "@/lib/site-config";
@@ -150,6 +151,20 @@ export default function MortgagePage() {
             costs more over the life of the loan. Use the calculator to compare
             both options.
           </p>
+          <h2>Related Tools</h2>
+          <div className="my-4 grid gap-3 sm:grid-cols-2">
+            {[
+              { href: "/calculators/home-affordability", label: "Home Affordability Calculator", desc: "Find out how much house you can afford based on your income and debts." },
+              { href: "/calculators/paycheck", label: "Paycheck Calculator", desc: "Estimate your take-home pay after taxes and deductions." },
+              { href: "/calculators/debt-to-income", label: "Debt-to-Income Calculator", desc: "Calculate your DTI ratio to see if you qualify for a mortgage." },
+              { href: "/calculators/loan-payoff", label: "Loan Payoff Calculator", desc: "See how extra payments can help you pay off your loan faster." },
+            ].map((tool) => (
+              <Link key={tool.href} href={tool.href} className="block rounded-lg border border-gray-200 bg-gray-50 p-4 no-underline transition hover:border-teal-300 hover:shadow-sm">
+                <p className="font-semibold text-teal-700">{tool.label}</p>
+                <p className="text-sm text-gray-600">{tool.desc}</p>
+              </Link>
+            ))}
+          </div>
         </section>
 
         <AdUnit className="my-10" />
