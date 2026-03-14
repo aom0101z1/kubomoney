@@ -32,7 +32,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/privacy`, priority: 0.3 },
     { url: `${baseUrl}/contact`, priority: 0.3 },
     { url: `${baseUrl}/business-guides`, priority: 0.7 },
+    { url: `${baseUrl}/business-guides/how-to-start-llc`, priority: 0.8 },
+    { url: `${baseUrl}/business-guides/how-to-write-business-plan`, priority: 0.7 },
+    { url: `${baseUrl}/business-guides/startup-costs`, priority: 0.7 },
+    { url: `${baseUrl}/business-guides/how-to-get-ein`, priority: 0.7 },
+    { url: `${baseUrl}/business-guides/best-business-bank-accounts`, priority: 0.7 },
     { url: `${baseUrl}/personal-finance`, priority: 0.7 },
+    { url: `${baseUrl}/personal-finance/investing-basics`, priority: 0.8 },
+    { url: `${baseUrl}/personal-finance/budgeting-guide`, priority: 0.7 },
+    { url: `${baseUrl}/personal-finance/how-to-pay-off-debt`, priority: 0.7 },
+    { url: `${baseUrl}/personal-finance/emergency-fund`, priority: 0.7 },
+    { url: `${baseUrl}/personal-finance/retirement-planning`, priority: 0.7 },
   ];
 
   const calculatorPages = calculators.map((slug) => ({

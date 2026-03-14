@@ -125,22 +125,40 @@ const calculators = [
 
 const guides = [
   {
+    title: "How to Start an LLC",
+    description: "Complete step-by-step LLC formation guide with costs for all 50 states.",
+    href: "/business-guides/how-to-start-llc",
+    icon: "🏢",
+  },
+  {
+    title: "Investing for Beginners",
+    description: "Learn how to start investing with stocks, bonds, ETFs, and index funds.",
+    href: "/personal-finance/investing-basics",
+    icon: "📈",
+  },
+  {
+    title: "Business Startup Costs",
+    description: "How much does it cost to start a business? Average costs by industry.",
+    href: "/business-guides/startup-costs",
+    icon: "🚀",
+  },
+  {
+    title: "How to Pay Off Debt",
+    description: "Snowball vs avalanche methods to pay off debt and save on interest.",
+    href: "/personal-finance/how-to-pay-off-debt",
+    icon: "💳",
+  },
+  {
     title: "Salary by State",
     description: "Compare average salaries, cost of living, and tax rates across all 50 states.",
     href: "/salary-by-state",
     icon: "💰",
   },
   {
-    title: "Start an LLC",
-    description: "Step-by-step LLC formation guides for all 50 states with costs and requirements.",
-    href: "/llc-by-state",
-    icon: "🏢",
-  },
-  {
-    title: "Investing for Beginners",
-    description: "Learn the fundamentals of investing and building wealth.",
-    href: "/personal-finance/investing-basics",
-    icon: "🎯",
+    title: "Budgeting Guide",
+    description: "Master the 50/30/20 rule and take control of your money.",
+    href: "/personal-finance/budgeting-guide",
+    icon: "📋",
   },
 ];
 

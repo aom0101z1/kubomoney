@@ -19,8 +19,14 @@ const calculatorLinks = [
 
 const guideLinks = [
   { href: "/business-guides/how-to-start-llc", label: "How to Start an LLC" },
-  { href: "/personal-finance/budgeting-guide", label: "Budgeting Guide" },
+  { href: "/business-guides/how-to-write-business-plan", label: "Write a Business Plan" },
+  { href: "/business-guides/startup-costs", label: "Startup Costs" },
+  { href: "/business-guides/how-to-get-ein", label: "How to Get an EIN" },
   { href: "/personal-finance/investing-basics", label: "Investing Basics" },
+  { href: "/personal-finance/budgeting-guide", label: "Budgeting Guide" },
+  { href: "/personal-finance/how-to-pay-off-debt", label: "Pay Off Debt" },
+  { href: "/personal-finance/emergency-fund", label: "Emergency Fund" },
+  { href: "/personal-finance/retirement-planning", label: "Retirement Planning" },
 ];
 
 export default function Footer() {
