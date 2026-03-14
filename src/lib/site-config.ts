@@ -5,10 +5,23 @@ export const siteConfig = {
     "Free online financial calculators and tools. Mortgage calculator, compound interest, loan payoff, retirement planning, salary by state, and more.",
   url: "https://kubomoney.com",
   adsenseId: "ca-pub-1474229931660831",
+  authors: [
+    {
+      name: "Alexander O.M.",
+      title: "MBA, BSc Engineering",
+      bio: "Business consultant, financial educator, and entrepreneur with a Master's in Business & Entrepreneurship and a First Class BSc in Engineering from the University of Westminster, London. Co-founder of multiple businesses spanning education, consulting, and technology.",
+      website: "https://alexanderom.com",
+    },
+    {
+      name: "Vanessa O.G.",
+      title: "Professional Educator & Entrepreneur",
+      bio: "Bilingual educator, entrepreneur, and business consultant with extensive experience in human resources management and organizational leadership. Co-founder of several businesses alongside Alexander, with a career spanning both private and public educational institutions.",
+    },
+  ],
   author: {
-    name: "Alexander O.M.",
-    title: "MBA, BSc Engineering",
-    bio: "Business consultant and financial educator with a Master's in Business & Entrepreneurship and a First Class BSc in Engineering from the University of Westminster, London.",
+    name: "Alexander O.M. & Vanessa O.G.",
+    title: "Entrepreneurs & Educators",
+    bio: "Business consultants, bilingual educators, and serial entrepreneurs. Together they have co-founded multiple businesses while serving as educators at private and public institutions.",
     website: "https://alexanderom.com",
   },
   social: {
