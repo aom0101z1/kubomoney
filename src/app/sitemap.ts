@@ -11,6 +11,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "retirement",
     "salary",
     "debt-to-income",
+    "auto-loan",
+    "credit-card-payoff",
+    "net-worth",
+    "inflation",
   ];
 
   const staticPages = [

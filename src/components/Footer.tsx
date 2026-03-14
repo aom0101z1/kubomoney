@@ -7,6 +7,10 @@ const calculatorLinks = [
   { href: "/calculators/loan-payoff", label: "Loan Payoff" },
   { href: "/calculators/retirement", label: "Retirement Calculator" },
   { href: "/calculators/salary", label: "Salary Calculator" },
+  { href: "/calculators/auto-loan", label: "Auto Loan Calculator" },
+  { href: "/calculators/credit-card-payoff", label: "Credit Card Payoff" },
+  { href: "/calculators/net-worth", label: "Net Worth Calculator" },
+  { href: "/calculators/inflation", label: "Inflation Calculator" },
 ];
 
 const guideLinks = [

@@ -57,6 +57,38 @@ const calculators = [
     icon: "⚖️",
     badge: null,
   },
+  {
+    title: "Auto Loan Calculator",
+    description:
+      "Estimate your monthly car payment with trade-in, down payment, and sales tax.",
+    href: "/calculators/auto-loan",
+    icon: "🚗",
+    badge: "New",
+  },
+  {
+    title: "Credit Card Payoff Calculator",
+    description:
+      "See how long it takes to pay off your credit card and how much interest you'll pay.",
+    href: "/calculators/credit-card-payoff",
+    icon: "💳",
+    badge: "New",
+  },
+  {
+    title: "Net Worth Calculator",
+    description:
+      "Add up your assets and subtract liabilities to see your total net worth.",
+    href: "/calculators/net-worth",
+    icon: "📊",
+    badge: null,
+  },
+  {
+    title: "Inflation Calculator",
+    description:
+      "See how inflation erodes your purchasing power over time.",
+    href: "/calculators/inflation",
+    icon: "📉",
+    badge: null,
+  },
 ];
 
 const guides = [
