@@ -121,6 +121,30 @@ const calculators = [
     icon: "🍽️",
     badge: "New",
   },
+  {
+    title: "Savings Goal Calculator",
+    description:
+      "How long to reach your savings target with monthly contributions and interest.",
+    href: "/calculators/savings-goal",
+    icon: "🎯",
+    badge: "New",
+  },
+  {
+    title: "Home Affordability Calculator",
+    description:
+      "How much house can you afford? Uses the 28/36 rule with income and debts.",
+    href: "/calculators/home-affordability",
+    icon: "🏡",
+    badge: "New",
+  },
+  {
+    title: "Paycheck Calculator",
+    description:
+      "Estimate take-home pay after taxes, FICA, 401(k), and insurance deductions.",
+    href: "/calculators/paycheck",
+    icon: "💵",
+    badge: "New",
+  },
 ];
 
 const guides = [

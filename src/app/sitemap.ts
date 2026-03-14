@@ -22,6 +22,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "break-even",
     "business-startup-cost",
     "tip",
+    "savings-goal",
+    "home-affordability",
+    "paycheck",
   ];
 
   const staticPages = [

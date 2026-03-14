@@ -15,6 +15,9 @@ const calculatorLinks = [
   { href: "/calculators/break-even", label: "Break-Even Calculator" },
   { href: "/calculators/business-startup-cost", label: "Startup Cost Calculator" },
   { href: "/calculators/tip", label: "Tip Calculator" },
+  { href: "/calculators/savings-goal", label: "Savings Goal Calculator" },
+  { href: "/calculators/home-affordability", label: "Home Affordability" },
+  { href: "/calculators/paycheck", label: "Paycheck Calculator" },
 ];
 
 const guideLinks = [

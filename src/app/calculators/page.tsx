@@ -121,6 +121,30 @@ const calculators = [
     icon: "🍽️",
     category: "Everyday",
   },
+  {
+    title: "Savings Goal Calculator",
+    description:
+      "Find out how long to reach your savings target with monthly contributions and compound interest.",
+    href: "/calculators/savings-goal",
+    icon: "🎯",
+    category: "Planning",
+  },
+  {
+    title: "Home Affordability Calculator",
+    description:
+      "How much house can you afford? Uses the 28/36 rule with your income, debts, and down payment.",
+    href: "/calculators/home-affordability",
+    icon: "🏡",
+    category: "Home",
+  },
+  {
+    title: "Paycheck Calculator",
+    description:
+      "Estimate take-home pay after federal & state taxes, Social Security, Medicare, 401(k), and insurance.",
+    href: "/calculators/paycheck",
+    icon: "💵",
+    category: "Income",
+  },
 ];
 
 export default function CalculatorsIndex() {
