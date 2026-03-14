@@ -47,6 +47,15 @@ export default function RootLayout({
       <head>
         <script
           async
+          src="https://www.googletagmanager.com/gtag/js?id=G-XRK84DD6VF"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XRK84DD6VF');`,
+          }}
+        />
+        <script
+          async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${siteConfig.adsenseId}`}
           crossOrigin="anonymous"
         />
