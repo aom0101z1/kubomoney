@@ -155,6 +155,12 @@ const guides = [
     icon: "💰",
   },
   {
+    title: "Salary by City",
+    description: "Compare salaries and purchasing power across 50 major US cities.",
+    href: "/salary-by-city",
+    icon: "🏙️",
+  },
+  {
     title: "Budgeting Guide",
     description: "Master the 50/30/20 rule and take control of your money.",
     href: "/personal-finance/budgeting-guide",
