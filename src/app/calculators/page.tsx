@@ -145,6 +145,30 @@ const calculators = [
     icon: "💵",
     category: "Income",
   },
+  {
+    title: "Emergency Fund Calculator",
+    description:
+      "Calculate how much you need in your emergency fund based on your actual monthly expenses.",
+    href: "/calculators/emergency-fund",
+    icon: "🛡️",
+    category: "Planning",
+  },
+  {
+    title: "Tax Withholding Calculator",
+    description:
+      "Estimate federal tax withholding, Social Security, Medicare, and take-home pay per paycheck.",
+    href: "/calculators/tax-withholding",
+    icon: "🏛️",
+    category: "Tax",
+  },
+  {
+    title: "Investment Fee Calculator",
+    description:
+      "See how expense ratios and management fees erode your investment returns over decades.",
+    href: "/calculators/investment-fee",
+    icon: "💸",
+    category: "Investment",
+  },
 ];
 
 export default function CalculatorsIndex() {

@@ -27,6 +27,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "savings-goal",
     "home-affordability",
     "paycheck",
+    "emergency-fund",
+    "tax-withholding",
+    "investment-fee",
   ];
 
   const staticPages = [
