@@ -3,6 +3,7 @@ import { siteConfig } from "@/lib/site-config";
 import { statesSalary } from "@/data/states-salary";
 import { statesLLC } from "@/data/states-llc";
 import { citiesSalary } from "@/data/cities-salary";
+import { citiesCOL } from "@/data/cities-cost-of-living";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url;
@@ -42,6 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/business-guides/how-to-get-ein`, priority: 0.7 },
     { url: `${baseUrl}/business-guides/best-business-bank-accounts`, priority: 0.7 },
     { url: `${baseUrl}/salary-by-city`, priority: 0.9 },
+    { url: `${baseUrl}/cost-of-living`, priority: 0.9 },
     { url: `${baseUrl}/personal-finance`, priority: 0.7 },
     { url: `${baseUrl}/personal-finance/investing-basics`, priority: 0.8 },
     { url: `${baseUrl}/personal-finance/budgeting-guide`, priority: 0.7 },
@@ -70,7 +72,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const allPages = [...staticPages, ...calculatorPages, ...salaryPages, ...llcPages, ...cityPages];
+  const colPages = citiesCOL.map((c) => ({
+    url: `${baseUrl}/cost-of-living/${c.slug}`,
+    priority: 0.7,
+  }));
+
+  const allPages = [...staticPages, ...calculatorPages, ...salaryPages, ...llcPages, ...cityPages, ...colPages];
 
   return allPages.map((page) => ({
     url: page.url,

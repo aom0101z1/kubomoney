@@ -128,6 +128,14 @@ export default async function CitySalaryPage({ params }: { params: Promise<{ slu
             Thinking about starting a business? Check our <Link href={`/llc-by-state/${city.stateSlug}`} className="text-teal-600 hover:underline">LLC guide for {city.state}</Link>.
           </p>
 
+          <h2>Cost of Living in {city.city}</h2>
+          <p>
+            See a detailed breakdown of housing, groceries, utilities, and more on our{" "}
+            <Link href={`/cost-of-living/${city.slug}`} className="text-teal-600 hover:underline">
+              cost of living in {city.city}
+            </Link>{" "}page.
+          </p>
+
           <h2>Calculate Your Take-Home Pay</h2>
           <p>
             Use our <Link href="/calculators/salary" className="text-teal-600 hover:underline">Salary Calculator</Link> to

@@ -4,7 +4,7 @@ import { citiesSalary } from "@/data/cities-salary";
 import AdUnit from "@/components/AdUnit";
 
 export const metadata: Metadata = {
-  title: "Average Salary by City (2025) - Compare 50 US Cities",
+  title: `Average Salary by City (${new Date().getFullYear()}) - Compare 50 US Cities`,
   description:
     "Compare average salaries, cost of living, and purchasing power across 50 major US cities. Find the best cities for your career and budget.",
 };
