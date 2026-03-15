@@ -128,6 +128,14 @@ export default async function StateSalaryPage({ params }: { params: Promise<{ sl
             ))}
           </ul>
 
+          <h2>Tax Rates in {state.name}</h2>
+          <p>
+            See the full tax breakdown including income tax, sales tax, property tax, and more on our{" "}
+            <Link href={`/tax-rates/${state.slug}`} className="text-teal-600 hover:underline">
+              {state.name} tax rates
+            </Link>{" "}page.
+          </p>
+
           <h2>Calculate Your Take-Home Pay</h2>
           <p>
             Use our <Link href="/calculators/salary" className="text-teal-600 hover:underline">Salary Calculator</Link> to
