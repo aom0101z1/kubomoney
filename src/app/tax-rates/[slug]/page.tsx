@@ -185,6 +185,10 @@ export default async function StateTaxPage({ params }: { params: Promise<{ slug:
             <Link href={`/llc-by-state/${state.slug}`} className="text-teal-600 hover:underline">
               LLC guide for {state.name}
             </Link>.
+            {" "}See the current{" "}
+            <Link href={`/minimum-wage/${state.slug}`} className="text-teal-600 hover:underline">
+              minimum wage in {state.name}
+            </Link>.
           </p>
 
           <h2>Financial Calculators</h2>

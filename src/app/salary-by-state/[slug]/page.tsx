@@ -112,6 +112,10 @@ export default async function StateSalaryPage({ params }: { params: Promise<{ sl
             The current minimum wage in {state.name} is <strong>${state.minWage.toFixed(2)}/hour</strong>,
             which equals approximately <strong>{fmt(Math.round(state.minWage * 2080))}</strong> per year
             for a full-time worker (40 hours/week, 52 weeks).
+            See our complete{" "}
+            <Link href={`/minimum-wage/${state.slug}`} className="text-teal-600 hover:underline">
+              {state.name} minimum wage guide
+            </Link>{" "}for tipped wages, scheduled increases, and more.
           </p>
 
           <h2>Top Employers in {state.name}</h2>
