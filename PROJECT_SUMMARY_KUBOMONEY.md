@@ -3,8 +3,8 @@
 > **Owners**: Alexander O.M. & Vanessa O.G.
 > **Location**: Pereira, Colombia
 > **Created**: March 2026
-> **Last Updated**: March 15, 2026
-> **Status**: LIVE — 297 PAGES — SCALING CONTENT & MONETIZATION
+> **Last Updated**: March 16, 2026
+> **Status**: LIVE — 349 PAGES — PAUSED, WAITING FOR TRAFFIC
 > **Repo**: github.com/aom0101z1/kubomoney
 > **Local Path**: `C:\Dev\Websites\finance-calc-hub\`
 
@@ -125,19 +125,20 @@ Plus 6 index pages (one per section) and 5 other static pages (home, about, priv
 
 ### Affiliate Links
 - **LLC Pages**: CTAs for ZenBusiness, LegalZoom, Northwest Registered Agent on all 50 LLC pages
-- **Status**: Placeholder URLs — NEED TO JOIN AFFILIATE PROGRAMS and swap in referral URLs
-- **Programs to join**:
-  - [ ] ZenBusiness affiliate program
-  - [ ] LegalZoom affiliate program (via Commission Junction)
-  - [ ] Northwest Registered Agent affiliate program
+- **Status**: Placeholder URLs — waiting for affiliate approvals, then swap in tracking URLs
+- **Programs**:
+  - [x] ZenBusiness — Applied via Awin Mar 15, REJECTED (site too new). Reapply later via zenbusiness.com/affiliates
+  - [ ] LegalZoom — Applied via Impact.com Mar 15, status "Sent Invite" (waiting for approval). Payout: 15% per sale
+  - [ ] Northwest Registered Agent — Not yet applied
+- **Impact.com**: Account created, kubomoney.com verified, site verification meta tag in layout.tsx
+- **CJ Affiliate**: Account created Mar 15 (not actively used, LegalZoom went through Impact.com)
 
 ### Google Analytics
 - **GA4 Property**: G-XRK84DD6VF (added March 14, 2026)
-- **Status**: Active and tracking
+- **Status**: Active and tracking (7 users as of Mar 15)
 
 ### Google Search Console
-- **Status**: Verified, sitemap submitted
-- **Action needed**: Resubmit sitemap (now 294 pages, was submitted with 192)
+- **Status**: Verified, sitemap resubmitted Mar 15 (289 pages discovered). Need to resubmit again (now 349 pages).
 
 ---
 
@@ -259,12 +260,14 @@ C:\Dev\Websites\finance-calc-hub\
 
 ---
 
-## IMMEDIATE TODO
+## IMMEDIATE TODO (WHEN RETURNING)
 
-- [x] **Sitemap resubmitted** in Search Console (289 pages discovered, Mar 15)
-- [ ] **Affiliate programs**: Awin (ZenBusiness) applied Mar 15, CJ Affiliate (LegalZoom) account created Mar 15, Northwest pending
-- [ ] **Swap referral URLs** into 50 LLC pages once affiliate links received
 - [ ] **Check AdSense** approval status (submitted Mar 13)
+- [ ] **Check Impact.com** for LegalZoom affiliate approval (applied Mar 15)
+- [ ] **Swap referral URLs** into 50 LLC pages once affiliate links received
+- [ ] **Reapply ZenBusiness** affiliate (direct at zenbusiness.com/affiliates) once traffic grows — Awin rejected Mar 16
+- [ ] **Apply Northwest** Registered Agent affiliate program
+- [ ] **Resubmit sitemap** in Search Console (now 349 pages, last submitted with 289)
 
 ## NEXT CONTENT TO BUILD
 
@@ -313,4 +316,4 @@ C:\Dev\Websites\finance-calc-hub\
 
 ---
 
-*Last updated: March 15, 2026 — 349 pages live*
+*Last updated: March 16, 2026 — 349 pages live — PAUSED until traffic grows*
