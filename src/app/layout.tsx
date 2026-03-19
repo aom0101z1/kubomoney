@@ -27,6 +27,9 @@ export const metadata: Metadata = {
   other: {
     "impact-site-verification": "9739320f-7da3-4526-b304-1f2e4b27acf2",
   },
+  alternates: {
+    canonical: "./",
+  },
   robots: {
     index: true,
     follow: true,
