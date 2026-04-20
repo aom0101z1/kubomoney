@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { statesLLC, getLLCBySlug } from "@/data/states-llc";
 import AdUnit from "@/components/AdUnit";
+import ArticleMeta from "@/components/ArticleMeta";
+import Disclaimer from "@/components/Disclaimer";
 import { siteConfig } from "@/lib/site-config";
 
 export function generateStaticParams() {
@@ -16,6 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `How to Start an LLC in ${state.name} (${new Date().getFullYear()}) - Step by Step Guide`,
     description: `Start an LLC in ${state.name} for $${state.filingFee}. Step-by-step guide covering filing fees, annual costs, tax rates, and everything you need to form your ${state.abbr} LLC.`,
+    robots: state.intro ? undefined : { index: false, follow: true },
   };
 }
 
@@ -52,9 +55,17 @@ export default async function StateLLCPage({ params }: { params: Promise<{ slug:
         <h1 className="mb-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
           How to Start an LLC in {state.name}
         </h1>
-        <p className="mb-8 text-lg text-gray-600">
+        <p className="mb-6 text-lg text-gray-600">
           Complete guide to forming a Limited Liability Company in {state.name}. Filing fee: ${state.filingFee}. Processing time: {state.filingTime}.
         </p>
+
+        <ArticleMeta reviewer="alexander" />
+
+        {state.intro && (
+          <div className="mb-10 rounded-xl border border-gray-200 bg-gray-50 p-6 text-[15px] leading-relaxed text-gray-700 sm:p-8 sm:text-base">
+            <p className="!my-0">{state.intro}</p>
+          </div>
+        )}
 
         {/* Cost Summary */}
         <div className="mb-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -221,6 +232,8 @@ export default async function StateLLCPage({ params }: { params: Promise<{ slug:
             </Link>
           </div>
         </section>
+
+        <Disclaimer kind="legal" />
       </article>
     </>
   );

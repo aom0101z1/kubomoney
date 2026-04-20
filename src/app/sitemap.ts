@@ -64,35 +64,47 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const salaryPages = statesSalary.map((s) => ({
-    url: `${baseUrl}/salary-by-state/${s.slug}`,
-    priority: 0.7,
-  }));
+  const salaryPages = statesSalary
+    .filter((s) => !!s.intro)
+    .map((s) => ({
+      url: `${baseUrl}/salary-by-state/${s.slug}`,
+      priority: 0.7,
+    }));
 
-  const llcPages = statesLLC.map((s) => ({
-    url: `${baseUrl}/llc-by-state/${s.slug}`,
-    priority: 0.7,
-  }));
+  const llcPages = statesLLC
+    .filter((s) => !!s.intro)
+    .map((s) => ({
+      url: `${baseUrl}/llc-by-state/${s.slug}`,
+      priority: 0.7,
+    }));
 
-  const cityPages = citiesSalary.map((c) => ({
-    url: `${baseUrl}/salary-by-city/${c.slug}`,
-    priority: 0.7,
-  }));
+  const cityPages = citiesSalary
+    .filter((c) => !!c.intro)
+    .map((c) => ({
+      url: `${baseUrl}/salary-by-city/${c.slug}`,
+      priority: 0.7,
+    }));
 
-  const colPages = citiesCOL.map((c) => ({
-    url: `${baseUrl}/cost-of-living/${c.slug}`,
-    priority: 0.7,
-  }));
+  const colPages = citiesCOL
+    .filter((c) => !!c.intro)
+    .map((c) => ({
+      url: `${baseUrl}/cost-of-living/${c.slug}`,
+      priority: 0.7,
+    }));
 
-  const taxPages = statesTax.map((s) => ({
-    url: `${baseUrl}/tax-rates/${s.slug}`,
-    priority: 0.7,
-  }));
+  const taxPages = statesTax
+    .filter((s) => !!s.intro)
+    .map((s) => ({
+      url: `${baseUrl}/tax-rates/${s.slug}`,
+      priority: 0.7,
+    }));
 
-  const minWagePages = statesMinWage.map((s) => ({
-    url: `${baseUrl}/minimum-wage/${s.slug}`,
-    priority: 0.7,
-  }));
+  const minWagePages = statesMinWage
+    .filter((s) => !!s.intro)
+    .map((s) => ({
+      url: `${baseUrl}/minimum-wage/${s.slug}`,
+      priority: 0.7,
+    }));
 
   const allPages = [...staticPages, ...calculatorPages, ...salaryPages, ...llcPages, ...cityPages, ...colPages, ...taxPages, ...minWagePages];
 

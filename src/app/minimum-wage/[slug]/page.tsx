@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { statesMinWage, getStateMinWageBySlug } from "@/data/states-minimum-wage";
 import AdUnit from "@/components/AdUnit";
+import ArticleMeta from "@/components/ArticleMeta";
+import Disclaimer from "@/components/Disclaimer";
 import { siteConfig } from "@/lib/site-config";
 
 export function generateStaticParams() {
@@ -17,6 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${state.name} Minimum Wage ${yr} - Current Rate, Tipped Wage & Scheduled Increases`,
     description: `${state.name} minimum wage is $${state.effectiveMinWage.toFixed(2)}/hr in ${yr}. Tipped minimum: $${state.tippedMinWage.toFixed(2)}. Full-time annual income: $${state.annualFullTime.toLocaleString()}. Scheduled increases & laws.`,
+    robots: state.intro ? undefined : { index: false, follow: true },
   };
 }
 
@@ -42,10 +45,11 @@ export default async function StateMinWagePage({ params }: { params: Promise<{ s
     url: `${siteConfig.url}/minimum-wage/${state.slug}`,
   };
 
-  const related = statesMinWage
-    .filter((s) => s.slug !== state.slug)
-    .sort(() => 0.5 - Math.random())
-    .slice(0, 6);
+  const idx = statesMinWage.findIndex((s) => s.slug === state.slug);
+  const related = [
+    ...statesMinWage.slice(idx + 1),
+    ...statesMinWage.slice(0, idx),
+  ].slice(0, 6);
 
   return (
     <>
@@ -60,9 +64,17 @@ export default async function StateMinWagePage({ params }: { params: Promise<{ s
         <h1 className="mb-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
           {state.name} Minimum Wage ({yr})
         </h1>
-        <p className="mb-8 text-lg text-gray-600">
+        <p className="mb-6 text-lg text-gray-600">
           Everything you need to know about minimum wage rates, tipped wages, scheduled increases, and take-home pay in {state.name}.
         </p>
+
+        <ArticleMeta reviewer="alexander" />
+
+        {state.intro && (
+          <div className="mb-10 rounded-xl border border-gray-200 bg-gray-50 p-6 text-[15px] leading-relaxed text-gray-700 sm:p-8 sm:text-base">
+            <p className="!my-0">{state.intro}</p>
+          </div>
+        )}
 
         {/* Key stats */}
         <div className="mb-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -225,6 +237,8 @@ export default async function StateMinWagePage({ params }: { params: Promise<{ s
         </section>
 
         <AdUnit className="my-10" />
+
+        <Disclaimer kind="financial" />
       </article>
     </>
   );

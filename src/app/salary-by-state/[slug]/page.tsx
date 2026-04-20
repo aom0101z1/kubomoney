@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { statesSalary, getStateBySlug } from "@/data/states-salary";
 import AdUnit from "@/components/AdUnit";
+import ArticleMeta from "@/components/ArticleMeta";
+import Disclaimer from "@/components/Disclaimer";
 import { siteConfig } from "@/lib/site-config";
 
 export function generateStaticParams() {
@@ -16,6 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `Average Salary in ${state.name} (${new Date().getFullYear()}) - Income & Cost of Living`,
     description: `Average salary in ${state.name} is $${state.medianIndividual.toLocaleString()}/year. See median household income, cost of living, tax rates, top employers, and how ${state.name} compares to other states.`,
+    robots: state.intro ? undefined : { index: false, follow: true },
   };
 }
 
@@ -56,9 +59,17 @@ export default async function StateSalaryPage({ params }: { params: Promise<{ sl
         <h1 className="mb-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
           Average Salary in {state.name} ({state.abbr})
         </h1>
-        <p className="mb-8 text-lg text-gray-600">
+        <p className="mb-6 text-lg text-gray-600">
           Comprehensive salary data, cost of living, tax rates, and employment information for {state.name}.
         </p>
+
+        <ArticleMeta reviewer="alexander" />
+
+        {state.intro && (
+          <div className="mb-10 rounded-xl border border-gray-200 bg-gray-50 p-6 text-[15px] leading-relaxed text-gray-700 sm:p-8 sm:text-base">
+            <p className="!my-0">{state.intro}</p>
+          </div>
+        )}
 
         {/* Key Stats */}
         <div className="mb-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -174,6 +185,8 @@ export default async function StateSalaryPage({ params }: { params: Promise<{ sl
             </Link>
           </div>
         </section>
+
+        <Disclaimer kind="financial" />
       </article>
     </>
   );

@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { citiesCOL, getCOLCityBySlug } from "@/data/cities-cost-of-living";
 import AdUnit from "@/components/AdUnit";
+import ArticleMeta from "@/components/ArticleMeta";
+import Disclaimer from "@/components/Disclaimer";
 import { siteConfig } from "@/lib/site-config";
 
 export function generateStaticParams() {
@@ -16,6 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `Cost of Living in ${city.city}, ${city.stateAbbr} (${new Date().getFullYear()}) - Housing, Groceries & More`,
     description: `Cost of living in ${city.city}, ${city.stateAbbr}: overall index ${city.overallIndex} (US avg = 100). Median home price $${city.medianHomePrice.toLocaleString()}, rent from $${city.medianRent1BR.toLocaleString()}/mo. See full breakdown.`,
+    robots: city.intro ? undefined : { index: false, follow: true },
   };
 }
 
@@ -70,11 +73,19 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ s
         <h1 className="mb-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
           Cost of Living in {city.city}, {city.stateAbbr}
         </h1>
-        <p className="mb-8 text-lg text-gray-600">
+        <p className="mb-6 text-lg text-gray-600">
           Complete cost of living breakdown for {city.city}, {city.state}.
           Overall index: <strong className={indexColor(city.overallIndex)}>{city.overallIndex}</strong> (US average = 100).
           Population: {city.population.toLocaleString()}.
         </p>
+
+        <ArticleMeta reviewer="alexander" />
+
+        {city.intro && (
+          <div className="mb-10 rounded-xl border border-gray-200 bg-gray-50 p-6 text-[15px] leading-relaxed text-gray-700 sm:p-8 sm:text-base">
+            <p className="!my-0">{city.intro}</p>
+          </div>
+        )}
 
         {/* Key Stats */}
         <div className="mb-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -240,6 +251,8 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ s
             </Link>
           </div>
         </section>
+
+        <Disclaimer kind="financial" />
       </article>
     </>
   );

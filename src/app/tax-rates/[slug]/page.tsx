@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { statesTax, getStateTaxBySlug } from "@/data/states-tax-rates";
 import AdUnit from "@/components/AdUnit";
+import ArticleMeta from "@/components/ArticleMeta";
+import Disclaimer from "@/components/Disclaimer";
 import { siteConfig } from "@/lib/site-config";
 
 export function generateStaticParams() {
@@ -16,6 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${state.name} Tax Rates (${new Date().getFullYear()}) - Income, Sales, Property Tax Guide`,
     description: `${state.name} tax rates: income tax ${state.incomeTaxRange}, sales tax ${state.salesTaxCombined}%, property tax ${state.propertyTaxRate}%. Complete tax guide for ${state.abbr} residents.`,
+    robots: state.intro ? undefined : { index: false, follow: true },
   };
 }
 
@@ -49,10 +52,18 @@ export default async function StateTaxPage({ params }: { params: Promise<{ slug:
         <h1 className="mb-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
           {state.name} Tax Rates ({state.abbr})
         </h1>
-        <p className="mb-8 text-lg text-gray-600">
+        <p className="mb-6 text-lg text-gray-600">
           Complete guide to taxes in {state.name} — income tax, sales tax, property tax, and more.
           Tax burden rank: <strong>#{state.taxBurdenRank} of 51</strong> (1 = highest tax burden).
         </p>
+
+        <ArticleMeta reviewer="alexander" />
+
+        {state.intro && (
+          <div className="mb-10 rounded-xl border border-gray-200 bg-gray-50 p-6 text-[15px] leading-relaxed text-gray-700 sm:p-8 sm:text-base">
+            <p className="!my-0">{state.intro}</p>
+          </div>
+        )}
 
         {/* Key Stats */}
         <div className="mb-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -227,6 +238,8 @@ export default async function StateTaxPage({ params }: { params: Promise<{ slug:
             </Link>
           </div>
         </section>
+
+        <Disclaimer kind="tax" />
       </article>
     </>
   );
