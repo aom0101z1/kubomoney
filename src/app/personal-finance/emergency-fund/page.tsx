@@ -4,7 +4,7 @@ import AdUnit from "@/components/AdUnit";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Emergency Fund Guide (2025) - How Much Do You Need?",
+  title: "Emergency Fund Guide (2026) - How Much Do You Need?",
   description:
     "Learn how to build an emergency fund. How much to save, where to keep it, and how to build one fast even on a tight budget.",
 };

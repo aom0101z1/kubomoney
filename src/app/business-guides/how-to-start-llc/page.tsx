@@ -4,7 +4,7 @@ import AdUnit from "@/components/AdUnit";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "How to Start an LLC (2025) - Complete Guide for All 50 States",
+  title: "How to Start an LLC (2026) - Complete Guide for All 50 States",
   description:
     "Learn how to start an LLC step by step. Covers naming, registered agents, Articles of Organization, EIN, and operating agreements. State-by-state filing fees and requirements.",
 };

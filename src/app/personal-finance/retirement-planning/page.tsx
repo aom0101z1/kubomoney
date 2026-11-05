@@ -4,7 +4,7 @@ import AdUnit from "@/components/AdUnit";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Retirement Planning Guide (2025) - How Much Do You Need to Retire?",
+  title: "Retirement Planning Guide (2026) - How Much Do You Need to Retire?",
   description:
     "Learn how much you need to retire, the best retirement accounts, and strategies for every age. Covers 401(k), IRA, Roth IRA, and the 4% rule.",
 };

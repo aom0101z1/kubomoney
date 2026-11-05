@@ -4,7 +4,7 @@ import AdUnit from "@/components/AdUnit";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "How to Pay Off Debt Fast (2025) - Snowball vs Avalanche Methods",
+  title: "How to Pay Off Debt Fast (2026) - Snowball vs Avalanche Methods",
   description:
     "Learn the fastest ways to pay off debt. Compare the debt snowball and avalanche methods, negotiate lower rates, and create a payoff plan.",
 };

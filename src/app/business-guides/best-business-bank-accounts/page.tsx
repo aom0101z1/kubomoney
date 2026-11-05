@@ -4,7 +4,7 @@ import AdUnit from "@/components/AdUnit";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Best Business Bank Accounts (2025) - Free & Low-Fee Options",
+  title: "Best Business Bank Accounts (2026) - Free & Low-Fee Options",
   description:
     "Compare the best business bank accounts for LLCs and small businesses. Free checking, low fees, online banking, and features that matter.",
 };

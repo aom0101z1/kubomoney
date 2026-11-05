@@ -4,7 +4,7 @@ import AdUnit from "@/components/AdUnit";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Investing for Beginners (2025) - How to Start Investing",
+  title: "Investing for Beginners (2026) - How to Start Investing",
   description:
     "Learn how to start investing with as little as $100. Covers stocks, bonds, ETFs, index funds, retirement accounts, and common mistakes to avoid.",
 };
@@ -102,8 +102,8 @@ export default function InvestingBasicsPage() {
 
           <StepCard step={4} title="Open an Investment Account">
             <ul className="mb-2 ml-6 list-disc space-y-2 text-gray-700">
-              <li><strong>401(k)</strong> &mdash; Through your employer, tax-advantaged, $23,500 limit (2025)</li>
-              <li><strong>IRA (Traditional or Roth)</strong> &mdash; Open one yourself, $7,000 limit (2025)</li>
+              <li><strong>401(k)</strong> &mdash; Through your employer, tax-advantaged, $23,500 limit (2026)</li>
+              <li><strong>IRA (Traditional or Roth)</strong> &mdash; Open one yourself, $7,000 limit (2026)</li>
               <li><strong>Taxable brokerage</strong> &mdash; No contribution limits, but you pay taxes on gains</li>
             </ul>
           </StepCard>

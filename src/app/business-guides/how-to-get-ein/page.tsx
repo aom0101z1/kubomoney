@@ -4,7 +4,7 @@ import AdUnit from "@/components/AdUnit";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "How to Get an EIN (2025) - Free IRS Application Guide",
+  title: "How to Get an EIN (2026) - Free IRS Application Guide",
   description:
     "Get a free EIN from the IRS in 5 minutes. Step-by-step guide to applying for an Employer Identification Number online for your LLC or business.",
 };

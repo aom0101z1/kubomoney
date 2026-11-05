@@ -4,7 +4,7 @@ import { statesSalary } from "@/data/states-salary";
 import AdUnit from "@/components/AdUnit";
 
 export const metadata: Metadata = {
-  title: "Average Salary by State (2025) - Compare All 50 States",
+  title: "Average Salary by State (2026) - Compare All 50 States",
   description:
     "Compare average salaries across all 50 US states. See median income, cost of living, tax rates, and cost-of-living adjusted salaries for every state.",
 };

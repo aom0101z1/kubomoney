@@ -4,7 +4,7 @@ import { statesLLC } from "@/data/states-llc";
 import AdUnit from "@/components/AdUnit";
 
 export const metadata: Metadata = {
-  title: "How to Start an LLC in Any State (2025) - Compare All 50 States",
+  title: "How to Start an LLC in Any State (2026) - Compare All 50 States",
   description:
     "Compare LLC formation costs across all 50 US states. See filing fees, annual costs, processing times, and tax rates. Find the best state to start your LLC.",
 };

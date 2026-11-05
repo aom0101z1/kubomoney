@@ -4,7 +4,7 @@ import AdUnit from "@/components/AdUnit";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Business Startup Costs (2025) - How Much Does It Cost to Start a Business?",
+  title: "Business Startup Costs (2026) - How Much Does It Cost to Start a Business?",
   description:
     "Average startup costs by business type. Learn what expenses to expect, how to reduce costs, and how much capital you need before launching.",
 };

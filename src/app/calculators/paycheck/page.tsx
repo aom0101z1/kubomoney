@@ -43,7 +43,7 @@ export default function PaycheckPage() {
           <ul>
             <li><strong>Federal income tax</strong> &mdash; Based on your taxable income and filing status (2025 brackets)</li>
             <li><strong>State income tax</strong> &mdash; Varies by state (0% in TX, FL, WA, NV, TN, SD, WY, NH, AK to 13.3% in CA)</li>
-            <li><strong>Social Security</strong> &mdash; 6.2% of income up to $176,100 (2025)</li>
+            <li><strong>Social Security</strong> &mdash; 6.2% of income up to $176,100 (2026)</li>
             <li><strong>Medicare</strong> &mdash; 1.45% of all income (+ 0.9% surtax above $200K)</li>
             <li><strong>401(k) contributions</strong> &mdash; Pre-tax, reduces your taxable income</li>
             <li><strong>Health insurance</strong> &mdash; Usually pre-tax, varies by employer plan</li>

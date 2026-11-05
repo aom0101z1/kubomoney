@@ -4,7 +4,7 @@ import AdUnit from "@/components/AdUnit";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Budgeting Guide (2025) - How to Budget Your Money",
+  title: "Budgeting Guide (2026) - How to Budget Your Money",
   description:
     "Learn how to create a budget that works. Covers the 50/30/20 rule, zero-based budgeting, envelope method, and the best budgeting apps.",
 };

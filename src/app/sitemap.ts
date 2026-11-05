@@ -57,6 +57,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/personal-finance/how-to-pay-off-debt`, priority: 0.7 },
     { url: `${baseUrl}/personal-finance/emergency-fund`, priority: 0.7 },
     { url: `${baseUrl}/personal-finance/retirement-planning`, priority: 0.7 },
+    { url: `${baseUrl}/personal-finance/how-to-improve-credit-score`, priority: 0.8 },
+    { url: `${baseUrl}/personal-finance/side-hustles-to-make-extra-money`, priority: 0.8 },
+    { url: `${baseUrl}/personal-finance/how-to-save-for-a-house-down-payment`, priority: 0.8 },
+    { url: `${baseUrl}/personal-finance/high-yield-savings-accounts-explained`, priority: 0.8 },
+    { url: `${baseUrl}/personal-finance/how-to-build-wealth-in-your-20s-and-30s`, priority: 0.8 },
+    { url: `${baseUrl}/business-guides/small-business-tax-deductions`, priority: 0.8 },
+    { url: `${baseUrl}/business-guides/quarterly-estimated-taxes-guide`, priority: 0.8 },
+    { url: `${baseUrl}/business-guides/sole-proprietorship-vs-llc`, priority: 0.8 },
+    { url: `${baseUrl}/business-guides/how-to-register-a-business-name-dba`, priority: 0.8 },
+    { url: `${baseUrl}/business-guides/how-to-price-your-services`, priority: 0.8 },
   ];
 
   const calculatorPages = calculators.map((slug) => ({

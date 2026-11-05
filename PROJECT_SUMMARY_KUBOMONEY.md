@@ -118,7 +118,16 @@ Plus 6 index pages (one per section) and 5 other static pages (home, about, priv
 ## MONETIZATION STATUS
 
 ### Google AdSense
-- **Status**: Pending approval (submitted March 13, 2026)
+- **Status (Nov 5, 2026)**: NOT under review. Rejected Apr 2026 for "low-value content"; the site was fixed
+  (Apr 19) but a new review was never requested. In AdSense the site shows "Debe revisarse" with the
+  "Solicitar revisión" button available. Payments info complete, no policy issues.
+- **AdSense account**: alexander.050710@gmail.com (adsense.google.com/adsense/u/5/pub-1474229931660831).
+  Search Console and GA4 for this site live in aom0101z1@gmail.com (GA4 property "kubomoney.com" 528392569).
+- **Traffic (Aug–Nov 2026)**: 0 Google clicks, 39 impressions, 8 pages indexed of 168 in sitemap; GA4 shows
+  only "Direct" sessions (bots/own visits). Traffic, not approval, is the real bottleneck.
+- **Nov 5, 2026**: added 10 long-form original guides (5 personal-finance, 5 business/tax, 1,600–2,600 words
+  each), bumped "(2025)" titles to "(2026)", sitemap now 178 URLs. Next: request review in AdSense,
+  resubmit sitemap in Search Console.
 - **Publisher ID**: ca-pub-1474229931660831
 - **ads.txt**: Authorized on both kubomoney.com and lalupa.com.co
 - **Ad placements**: AdUnit components placed throughout all pages (render nothing until approved)
@@ -262,7 +271,7 @@ C:\Dev\Websites\finance-calc-hub\
 
 ## IMMEDIATE TODO (WHEN RETURNING)
 
-- [ ] **Check AdSense** approval status (submitted Mar 13)
+- [ ] **Request AdSense review** (never requested after the April fix) and resubmit the sitemap
 - [ ] **Check Impact.com** for LegalZoom affiliate approval (applied Mar 15)
 - [ ] **Swap referral URLs** into 50 LLC pages once affiliate links received
 - [ ] **Reapply ZenBusiness** affiliate (direct at zenbusiness.com/affiliates) once traffic grows — Awin rejected Mar 16

@@ -4,7 +4,7 @@ import AdUnit from "@/components/AdUnit";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "How to Write a Business Plan (2025) - Free Template & Guide",
+  title: "How to Write a Business Plan (2026) - Free Template & Guide",
   description:
     "Learn how to write a business plan step by step. Covers executive summary, market analysis, financial projections, and more. Free template included.",
 };
